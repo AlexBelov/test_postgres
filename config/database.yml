@@ -1,0 +1,11 @@
+default: &default
+  host: localhost
+  adapter: postgresql
+  user: postgres
+  pool: 5
+  timeout: 5000
+  password: '123'
+
+development:
+  <<: *default
+  database: test_postgres
